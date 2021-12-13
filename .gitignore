@@ -1,0 +1,30 @@
+.idea/
+.pytest_cache/
+__pycache__/
+*.iml
+*.iws
+*.pyx
+*.pyc
+.coverage
+MANIFEST
+/build/
+setup.cfg
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# pip stuff
+/temp/
+
+# vim temp file
+*~
+*.swp
+*.un~
+
+# temporary documentation folder
+tempdocs
+tempdocs/*
+sphinxdocs/build
+sphinxdocs/build/*
