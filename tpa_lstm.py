@@ -17,6 +17,9 @@ import util
 
 
 class TPA_LSTM(tf.keras.Model):
+
+    __slots__ = ['embeddings', 'embedding_size', 'lstm', 'obs_len', 'tpa', 'linear_final']
+
     def __init__(self, output_horizon, embedding_size, obs_len, filter_num, n_layers):
         super(TPA_LSTM, self).__init__()
         self.embeddings = Sequential([
@@ -57,6 +60,9 @@ class TPA_LSTM(tf.keras.Model):
 
 
 class TemporalPatternAttention(tf.keras.Model):
+
+    __slots__ = ['filter_num', 'embedding_size', 'conv', 'linear_w']
+
     def __init__(self, filter_num, kernel_size, embedding_size):
         super(TemporalPatternAttention, self).__init__()
         self.filter_num = filter_num
