@@ -1,6 +1,6 @@
 # TensorFlow2 Implementation of TPA-LSTM
 
-## TPA-LSTM 的 TensorFlow2 实现
+## TPA-LSTM 的 TensorFlow2 keras API 实现
 
 ------
 
